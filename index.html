@@ -10,12 +10,37 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            .download-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 15px 30px;
+    background: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #0044aa;
+}
         }
 
         body {
             height: 100vh;
             overflow: hidden;
             background: #000;
+            <a href="Animation.zip" download>
+    <button class="download-btn">
+        ⬇ Download Animation
+    </button>
+</a>
         }
 
         .space {
